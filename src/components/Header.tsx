@@ -107,7 +107,7 @@ export const Header = () => {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                  <NavigationMenuLink>
+                  <NavigationMenuLink asChild>
                     <Link
                       to="/about" // 2. Use 'to' instead of 'href'
                       className="px-4 py-2 text-sm font-medium text-foreground hover:text-primary transition-colors"
