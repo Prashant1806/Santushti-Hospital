@@ -63,16 +63,10 @@ export const BlogDetail = () => {
               <p className="text-xl text-foreground font-medium leading-relaxed">
                 {post.excerpt}
               </p>
-
-              
-
-[Image of the human urinary system]
-
               
               <h2 className="text-2xl font-bold text-foreground mt-8">Medical Overview</h2>
               <p>
-                At Santushti Hospital, we emphasize that <strong>{post.title}</strong> is a critical topic for our patients. 
-                Whether you are visiting us in Varanasi or reading from afar, understanding your health is the first step toward recovery.
+                {post.content}
               </p>
 
               <blockquote className="border-l-4 border-primary pl-6 py-2 italic bg-muted/50 rounded-r-lg">
