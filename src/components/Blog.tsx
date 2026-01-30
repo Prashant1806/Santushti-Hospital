@@ -121,20 +121,22 @@ export const Blog = () => {
           ))}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.4, duration: 0.5 }}
-          className="text-center mt-12"
-        >
-          <Button
-            size="lg"
-            className="bg-primary hover:opacity-90 text-primary-foreground"
-          >
-            Read More Articles
-            <ArrowRight className="w-5 h-5 ml-2" />
-          </Button>
-        </motion.div>
+     <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={isInView ? { opacity: 1, y: 0 } : {}}
+  transition={{ delay: 0.4, duration: 0.5 }}
+  className="text-center mt-12"
+>
+  <Link to="/blog"> 
+    <Button
+      size="lg"
+      className="bg-primary hover:opacity-90 text-primary-foreground"
+    >
+      Read More Articles
+      <ArrowRight className="w-5 h-5 ml-2" />
+    </Button>
+  </Link>
+</motion.div>
       </div>
     </section>
   );
