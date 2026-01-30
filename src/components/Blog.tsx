@@ -3,46 +3,47 @@ import { motion, useInView } from "framer-motion";
 import { Calendar, ArrowRight, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { blogPosts } from "./blogPostData";
 
-const blogPosts = [
-  {
-    title: "How to take care of your kidneys a complete guide",
-    excerpt:
-      "Learn about the essential functions of kidneys and how to maintain their health through proper diet and lifestyle choices.",
-    date: "January 10, 2025",
-    readTime: "5 min read",
-    category: "Kidney Care",
-    // In Vite, place images in the /public folder and reference them with absolute paths
-    image: "/blog-kidney.jpg",
-  },
-  {
-    title: "How to take care of your kidneys in winters",
-    excerpt:
-      "Recognizing early warning signs can help in timely diagnosis and treatment of urological conditions.",
-    date: "January 5, 2025",
-    readTime: "4 min read",
-    category: "Urology",
-    image: "/blog-winter.jfif",
-  },
-  {
-    title: "What is nephrotic syndrome",
-    excerpt:
-      "Regular health screenings can detect potential health issues early, leading to better outcomes.",
-    date: "December 28, 2024",
-    readTime: "3 min read",
-    category: "General Health",
-    image: "/blog-nephrotic.jfif",
-  },
-  {
-    title: "Conveniently book appointments with our expert doctors",
-    excerpt:
-      "Regular health screenings can detect potential health issues early, leading to better outcomes.",
-    date: "December 28, 2024",
-    readTime: "3 min read",
-    category: "General Health",
-    image: "/blog-appointment.jfif",
-  },
-];
+// const blogPosts = [
+//   {
+//     title: "How to take care of your kidneys a complete guide",
+//     excerpt:
+//       "Learn about the essential functions of kidneys and how to maintain their health through proper diet and lifestyle choices.",
+//     date: "January 10, 2025",
+//     readTime: "5 min read",
+//     category: "Kidney Care",
+//     // In Vite, place images in the /public folder and reference them with absolute paths
+//     image: "/blog-kidney.jpg",
+//   },
+//   {
+//     title: "How to take care of your kidneys in winters",
+//     excerpt:
+//       "Recognizing early warning signs can help in timely diagnosis and treatment of urological conditions.",
+//     date: "January 5, 2025",
+//     readTime: "4 min read",
+//     category: "Urology",
+//     image: "/blog-winter.jfif",
+//   },
+//   {
+//     title: "What is nephrotic syndrome",
+//     excerpt:
+//       "Regular health screenings can detect potential health issues early, leading to better outcomes.",
+//     date: "December 28, 2024",
+//     readTime: "3 min read",
+//     category: "General Health",
+//     image: "/blog-nephrotic.jfif",
+//   },
+//   {
+//     title: "Conveniently book appointments with our expert doctors",
+//     excerpt:
+//       "Regular health screenings can detect potential health issues early, leading to better outcomes.",
+//     date: "December 28, 2024",
+//     readTime: "3 min read",
+//     category: "General Health",
+//     image: "/blog-appointment.jfif",
+//   },
+// ];
 
 export const Blog = () => {
   const ref = useRef(null);
